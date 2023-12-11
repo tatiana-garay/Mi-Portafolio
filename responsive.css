@@ -1,0 +1,313 @@
+@media (max-width: 1300px) {
+    .nav-links {
+        font-size:15px
+    }
+
+    .language-container {
+        right: 8%;
+        top: 9%
+    }
+}
+
+@media (max-width: 900px) {
+    .burger-btn {
+        display:flex;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        border: 0;
+        background: transparent;
+        z-index: 10
+    }
+
+    .li-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background-image: url(img/cloudstablet-aa1518d7.png);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        z-index: 9;
+        height: 1000px;
+        transition: .5s
+    }
+
+    .li-container.active {
+        transform: translate(0);
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%
+    }
+
+    .li-container.active:after {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 700px
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        max-width: 90%
+    }
+
+    .nav-links li {
+        height: 70px
+    }
+
+    .nav-links li:before {
+        display: none
+    }
+
+    .burger-btn.active+.li-container .nav-links {
+        display: block;
+        transition: .5s
+    }
+
+    .language-container {
+        right: 78%;
+        top: 3%
+    }
+}
+
+@media (max-width: 500px) {
+    .burger-btn {
+        display:flex;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        border: 0;
+        background: transparent;
+        z-index: 10
+    }
+
+    .li-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background-image: url(img/cloudsmobile-ab792044.png);
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        z-index: 9;
+        height: 900px;
+        transition: .5s
+    }
+
+    .li-container.active {
+        transform: translate(0);
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%
+    }
+
+    .li-container.active:after {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 700px
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+        padding-bottom: 240px
+    }
+
+    .nav-links li {
+        height: 30px
+    }
+
+    .nav-links li:before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        width: 10%;
+        left: 45%;
+        height: 1px;
+        transition: .5s
+    }
+
+    .burger-btn.active+.li-container .nav-links {
+        display: block;
+        transition: .5s
+    }
+}
+
+
+@media (max-width: 900px) {
+    .astro2 {
+        width:300px;
+        top: 67%;
+        left: 31%;
+        z-index: 7
+    }
+
+    .home-section {
+        height: 1000px;
+        margin-top: 0
+    }
+
+    .h1-intro {
+        top: 10%;
+        font-size: 90px
+    }
+
+    .hi {
+        top: 13%
+    }
+
+    .secondary-text {
+        top: 30%
+    }
+
+    .frontend-text {
+        position: absolute;
+        top: 27%
+    }
+
+    .h2-desarrolladora {
+        font-size: 45px;
+        font-weight: 100;
+        letter-spacing: 6px
+    }
+
+    .container-welcome {
+        position: absolute;
+        top: 53%
+    }
+}
+
+@media (max-width: 550px) {
+    .homepage {
+        height:100vh;
+        max-width: 100%
+    }
+
+    .mari2 {
+        width: 120px;
+        top: 55%;
+        left: 27%
+    }
+    .mariposa{
+        display: none;
+    }
+
+    .h1-intro {
+        top: 12%;
+        font-size: 40px;
+        line-height: 55px;
+        margin: 60px;
+        margin-left: 0px;
+    }
+
+    .hi {
+        top: 13%;
+        font-size: 30px;
+        margin-left: 60px;
+    }
+
+    .secondary-text {
+        top: 23.5%;
+        font-size: 10px
+    }
+
+    .front-span {
+        font-size: 20px;
+        letter-spacing: 17px
+    }
+
+    .dev-span {
+        font-size: 30px
+    }
+}
+
+
+@media (max-width: 550px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .mifoto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .img-mi{
+        width: 200px;
+        height: 200px;
+    }
+    .container2{
+        display:flex ;
+        margin-left: -141px;
+    }
+}
+
+/*RESPONSIBE PROYECTOS!*/
+
+@media (max-width: 550px){
+    .project-container .card{
+        width: 370px;
+    }
+    .project-container .card .imgBx{
+        width: 300px;
+    }
+    .project-container .card .imgBx img{
+        width: 300px;
+    }
+}
+/*iniciooo responsive cetificado*/
+@media (max-width: 550px){
+    .certificate-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .certificate-container h2{
+        font-size: 20px;
+    }
+    .cert-img{
+        width: 310px;
+    }
+    .certificate-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .two-img{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Responsive footer*/
+@media (max-width: 550px ) {
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .likedin{
+        width: 30px;
+        height: 30px;
+    }
+}
