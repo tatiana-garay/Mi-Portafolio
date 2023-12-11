@@ -1,0 +1,843 @@
+/* ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+body{
+    background-image: url('img/fondo-mariposa.jpg');
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/*HEADER*/
+
+.li-container {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    background-color: #23003496;
+    font-family: Geologica,sans-serif
+}
+
+.nav-links {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500
+}
+
+.nav-links li {
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    margin: 20px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.nav-links li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fbff80;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .2s ease-in-out
+}
+
+.nav-links li:hover:before {
+    transform: scaleX(1);
+    transform-origin: left
+}
+
+.li {
+    transition: .2s ease-in-out
+}
+
+.li:hover {
+    transform: scale(1.1);
+    color: #fbff80
+}
+
+.language-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 8%;
+    top: 7%;
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+
+.languageEn {
+    padding: 6px;
+    color: #fff;
+    font-weight: 100;
+    font-family: Geologica,sans-serif;
+    cursor: pointer
+}
+
+.languageEs {
+    padding: 6px;
+    color: #fff;
+    font-family: Geologica,sans-serif;
+    font-weight: 100;
+    cursor: pointer
+}
+
+.languageEn:hover {
+    background: rgba(181,21,255,.451);
+    transition: .5s;
+    border-radius: 50%
+}
+
+.languageEs:hover {
+    background: rgba(175,2,255,.469);
+    transition: .5s;
+    border-radius: 50%
+}
+
+.languageEn.active,.languageEs.active {
+    color: violet
+}
+
+
+@media (max-width: 900px) {
+    .nav-links {
+        display:flex;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        border: 0;
+        background: transparent;
+        z-index: 10
+    }
+
+    .li-container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-100%);
+        z-index: 9;
+        height: 1000px;
+        transition: .5s
+    }
+
+    .li-container.active {
+        transform: translate(0);
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%
+    }
+
+    .li-container.active:after {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 700px
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+        max-width: 90%
+    }
+
+    .nav-links li {
+        height: 70px
+    }
+
+    .nav-links li:before {
+        display: none
+    }
+
+    .burger-btn.active+.li-container .nav-links {
+        display: block;
+        transition: .5s
+    }
+
+    .language-container {
+        right: 78%;
+        top: 3%
+    }
+}
+/*Mariposa que vuela , no salio como queria 
+.toTop {
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 9999
+}
+
+.rocket-box {
+    height: 600px
+}
+
+.rocket-container {
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition: all 2.5s
+}
+
+.rockett img {
+    width: 100px;
+    height: 100px;
+    z-index: 10000
+}
+
+.rockett:before {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 0px;
+    width: 18px;
+    background: linear-gradient(rgb(74,225,255),rgb(150,4,255),transparent);
+    transition: all 2.5s
+}
+
+.rockett:after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 0px;
+    width: 25px;
+    background: linear-gradient(rgb(74,225,255),rgb(150,4,255),transparent);
+    filter: blur(15px);
+    transition: all 2.5s
+}
+
+.rocket-container.active {
+    bottom: 30%
+}
+
+.rocket-container.active .rockett {
+    animation: movement .2s 2s ease infinite
+}
+
+.rocket-container.active .rockett:before {
+    height: 220px
+}
+
+.rocket-container.active .rockett:after {
+    height: 300px
+}
+
+@keyframes movement {
+    0%,to {
+        transform: translateY(-2px)
+    }
+
+    50% {
+        transform: translateY(2px)
+    }
+}*/
+
+/*INICIO DE LA PAGINA*/
+
+.homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    letter-spacing: 10px;
+}
+.hi{
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    letter-spacing: 16px;
+    font-size: 35px;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.h1-intro{
+    font-size: 110px;
+    background-image: url('img.png');
+    background-size: cover;
+    background-position-y: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px rgba(255, 251, 255, 986);
+    /* background-clip: text;
+    background-image: url('img.png');*/
+    
+    animation: back 30s linear infinite; 
+    
+    top: 42%;
+}
+
+@keyframes back {
+    to {
+        background-position: 2000px 0
+    }
+}
+
+.mariposa{
+    
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-image: url(fondo-mariposa.jpg);
+    background-size: cover;
+    gap: 20px;
+}
+.about-container {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%
+}
+
+.text-img-box {
+    display: flex;
+    transition: ease-in-out .5s;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px
+}
+
+.title-mi{
+    color: #fff;
+    font-size: 70px;
+    margin-right: 140px;
+    position: relative;
+}
+
+.title-mi::after{
+    content:"" ;
+    position: absolute;
+    bottom: -2px;
+    left: 20%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: left .3s ease-out;
+}
+.title-mi:hover:after {
+    left: 0
+}
+.title-mi span{
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 4px
+}
+
+.mifoto{
+    background-color: #ad61dfe9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 560px;
+    height: 310px;
+}
+.img-mi{
+    width: 220px;
+    height: 270px;
+    transition: .7s ease-in-out;
+}
+
+.img-mi:hover{
+    transition: .7s ease-in-out;
+    transform: rotate(4deg);
+}
+
+.a-neon {
+    position: relative;
+    width: 100px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000069;
+    margin: 40px;
+    transition: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    font-family: Geologica,sans-serif;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,rgba(128,128,128,.394))
+}
+
+.a-neon:hover {
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),0 0 30px var(--clr),0 0 60px var(--clr),0 0 100px var(--clr)
+}
+
+.a-neon:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 400%;
+    background: var(--clr);
+    transition: 1s;
+    animation: animate 2s linear infinite
+}
+
+.a-neon:hover:before {
+    width: 120%
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.a-neon:after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #390241;
+    transition: .5s
+}
+
+.a-neon:hover:after {
+    background: var(--clr)
+}
+
+.a-neon span {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    color: #fff;
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 4px
+}
+
+.a-neon:hover span {
+    opacity: 1
+}
+
+
+/*hasta aca la informacion sobre mi y mi cv*/
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap
+}
+
+.container2 h2 {
+    font-size: 22px;
+    width: 334px;
+    font-family: Geologica,sans-serif
+}
+
+.container2 p {
+    font-size: 19px;
+    margin: 30px;
+    font-weight: 100;
+    font-family: Geologica,sans-serif
+}
+
+.container2 .box2 {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+    transition: .5s;
+    font-family: Open Sans,sans-serif
+}
+
+.container2 .box2:hover {
+    transform: translateY(-20px)
+}
+
+.container2 .box2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,yellow,deeppink)
+}
+
+.container2 .box2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,rgb(255,213,0),deeppink);
+    filter: blur(30px)
+}
+
+.container2 .box2:nth-child(2):before,.container2 .box2:nth-child(2):after {
+    background: linear-gradient(315deg,rgb(255,0,128),rgb(157,0,255))
+}
+
+.container2 .box2:nth-child(3):before,.container2 .box2:nth-child(3):after {
+    background: linear-gradient(315deg,rgb(82,255,14),rgb(0,174,255))
+}
+
+.container2 .box2 span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: #0009;
+    z-index: 2
+}
+
+.container2 .box2 span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff1a;
+    pointer-events: none
+}
+
+.container2 .box2 .content {
+    z-index: 10;
+    padding: 20px 40px
+}
+
+.container2 .box2 .container2 h2 {
+    font: 2em;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+.container2 .box2 .container2 p {
+    font: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em
+}
+
+
+
+/*INICIO DE PROYECTOS*/
+.box-body {
+    display: flex;
+    justify-content: space-between;
+    
+    height: 110vh;
+    
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    /* gap: 20px; */
+}
+
+.myproject {
+    margin-left: 30px;
+    top: 0%;
+    z-index: 100
+}
+
+.myproject span {
+    font-size: 55px;
+    font-weight: 100;
+    color: #f00fb800;
+    font-family: Geologica,sans-serif
+}
+
+.myproject>span {
+    animation: glowh2 2s ease-in-out infinite
+}
+
+@keyframes glowh2 {
+    0%,to {
+        color: #fff5fd;
+        text-shadow: 0 0 12px rgb(179,0,255),0 0 50px rgb(179,0,255),0 0 100px rgb(179,0,255)
+    }
+
+    10%,90% {
+        color: #2e082e44
+    }
+}
+
+.myproject>span:nth-child(2) {
+    animation-delay: .25s
+}
+
+.myproject>span:nth-child(3) {
+    animation-delay: .5s
+}
+
+.myproject>span:nth-child(4) {
+    animation-delay: .75s
+}
+
+.myproject>span:nth-child(5) {
+    animation-delay: 1s
+}
+
+.myproject>span:nth-child(6) {
+    animation-delay: 1.25s
+}
+
+.myproject>span:nth-child(7) {
+    animation-delay: 1.5s
+}
+
+.myproject>span:nth-child(8) {
+    animation-delay: 1.75s
+}
+
+.myproject>span:nth-child(9) {
+    animation-delay: 2s
+}
+
+.myproject>span:nth-child(10) {
+    animation-delay: 2.25s
+}
+
+.project-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px
+}
+
+.project-container .card {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: #ffffff1f;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px #00000034;
+    transition: .5s
+}
+
+.project-container .card:hover {
+    height: 400px
+}
+
+.project-container .card .imgBx {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 400px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+    align-items: center
+}
+
+.project-container .card:hover .imgBx {
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px #00000060
+}
+
+.project-container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.project-container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s
+}
+
+.project-container .card:hover .content {
+    top: 130px;
+    height: 250px
+}
+
+.project-container .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr)
+}
+
+.project-container .card .content p {
+    color: #fdfdfd
+}
+
+.project-container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px
+}
+
+/*Inicio de certificados*/
+.certificate-container {
+    height: 228vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.certificate-container h2 {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 20px;
+    font-weight: 100
+}
+
+.certificate-images {
+    display: flex;
+    flex-direction: column
+}
+
+.two-img {
+    display: flex;
+    flex-direction: row
+}
+
+.cert-img {
+    width: 480px;
+    margin: 20px;
+    transition: 1s
+}
+
+.cert-img:hover {
+    transition: 1s;
+    transform: scale(1.8);
+    transform-origin: center;
+    z-index: 200
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background-color: #23003496;
+    font-family: Geologica,sans-serif;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.effect3{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-direction: column;
+}
+
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.likedin{
+    width: 70px;
+    height: 70px;
+
+    margin: 20px;
+}
+
+.text{
+    font-size: 30px;
+    margin: 20px;
+    color: #fff;
+
+}
+.content-footer:hover{
+    transition: 1s;
+    transform: scale(1.8);
+    transform-origin: center;
+    z-index: 50
+}
+
+#copyright{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
