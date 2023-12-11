@@ -98,7 +98,7 @@
         position: absolute;
         top: 0px;
         width: 100%;
-        background-image: url(img/cloudsmobile-ab792044.png);
+        background-image: url(img/cloudstablet-aa1518d7.png);
         justify-content: center;
         align-items: center;
         transform: translateY(-100%);
@@ -270,12 +270,31 @@
 @media (max-width: 550px){
     .project-container .card{
         width: 370px;
+        height: 250px;
     }
     .project-container .card .imgBx{
+        position: absolute;
         width: 300px;
+        height: 170px;
+        top: 20px;
     }
     .project-container .card .imgBx img{
         width: 300px;
+    }
+    .myproject span {
+        font-size: 30px
+    }
+    .project-container .card .content {
+        position: absolute;
+        top: 180px;
+        width: 100%
+
+    }
+    .project-container .card .content h2{
+        font-size: 20px;
+    }
+    .project-container .card .content p{
+        font-size: 12px;
     }
 }
 /*iniciooo responsive cetificado*/
@@ -283,6 +302,7 @@
     .certificate-container{
         display: flex;
         flex-direction: column;
+        font-size: 23px;
     }
     .certificate-container h2{
         font-size: 20px;
