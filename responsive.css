@@ -178,8 +178,10 @@
 
 @media (max-width: 550px) {
     .homepage {
+        display: flex;
         height:40vh;
-        max-width: 100%
+        max-width: 100%;
+        align-items: center;
     }
 
     .mari2 {
@@ -200,7 +202,7 @@
     }
 
     .hi {
-        top: 13%;
+        top: 60px;
         font-size: 30px;
         margin-left: 60px;
     }
@@ -244,9 +246,9 @@
 
 
 @media (max-width: 550px){
-    .container{
+    /* .container{
         height:2400px
-    }
+    } */
     .title-mi{
         font-size: 33px;
         max-width: 70%;
@@ -300,7 +302,7 @@
 /*RESPONSIBE PROYECTOS!*/
 @media (max-width: 1500px) {
     .box-body {
-        height:auto;
+        height:1126px;
         margin-bottom: 300px;
         margin-top: 300px
     }
@@ -392,10 +394,10 @@
 }
 
 @media (max-width: 900px) {
-    .certificate-container {
+    /* .certificate-container {
         padding-top:300px;
         height: auto
-    }
+    } */
 
     .two-img {
         flex-direction: column;
