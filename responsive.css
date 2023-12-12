@@ -240,34 +240,132 @@
         font-size: 30px
     }
 }
+@media (max-width: 1400px) {
+    .h2-pic-cv {
+        flex-direction:column
+    }
+
+    .container {
+        height: auto
+    }
+}
+
+@media (max-width: 1017px) {
+    .h2-pic-cv {
+        flex-direction:column;
+        text-align: center;
+        align-items: center
+    }
+
+    .container {
+        height: 2300px;
+        background-image: url(img/askyfullofstars2mobile2-48d16e15.png)
+    }
+}
 
 
 @media (max-width: 550px){
     .container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        
+        height:2400px
+    }
+    .title-mi{
+        font-size: 33px;
+        max-width: 70%;
+        margin-right: 0
     }
     .mifoto{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        width: 300px;
     }
+    .container2 h2 {
+        width: 300px;
+        text-align: center
+    }
+
+    .container2 p {
+        width: 240px;
+        font-size: 18px
+    }
+
     .img-mi{
         width: 200px;
         height: 200px;
     }
     .container2{
-        display:flex ;
-        margin-left: -141px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+    .a-neon {
+        width: 80px;
+        height: 30px;
+        font-size: 14px
+    }
+
+    .container2 .box2 {
+        width: 300px;
+        height: 500px
+    }
+
+    .box2 .gettoknowme {
+        font-size: 18px
     }
 }
 
 /*RESPONSIBE PROYECTOS!*/
+@media (max-width: 1500px) {
+    .box-body {
+        height:auto;
+        margin-bottom: 300px;
+        margin-top: 300px
+    }
 
-@media (max-width: 550px){
+    .myproject {
+        top: -20%
+    }
+}
+
+@media (max-width: 930px) {
+    .box-body {
+        background-image:url(../copiado/img/cloudstablet-aa1518d7.png)
+    }
+
+    .myproject {
+        top: -10%
+    }
+}
+
+@media (max-width: 650px) {
+    .project-container .card {
+        width:350px;
+        height: 250px
+    }
+
+    .project-container .card .imgBx {
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 170px
+    }
+
+    .project-container .card .content {
+        position: absolute;
+        top: 180px;
+        width: 100%
+    }
+
+    .myproject span {
+        font-size: 30px
+    }
+}
+
+/*@media (max-width: 550px){
     .project-container .card{
         width: 370px;
         height: 250px;
@@ -298,6 +396,49 @@
     }
 }
 /*iniciooo responsive cetificado*/
+@media (max-width: 1400px) {
+    .certificate-container {
+        height:150vh
+    }
+}
+
+@media (max-width: 1100px) {
+    .cert-img {
+        width:370px
+    }
+
+    .cert-img:hover {
+        transform: scale(1.1)
+    }
+}
+
+@media (max-width: 900px) {
+    .certificate-container {
+        padding-top:300px;
+        height: auto
+    }
+
+    .two-img {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .cert-img {
+        max-width: 90%
+    }
+
+    .certificate-container h2 {
+        font-size: 25px
+    }
+}
+
+@media (max-width: 600px) {
+    .certificate-container h2 {
+        font-size:23px;
+        letter-spacing: 4px;
+        margin-bottom: 40px
+    }
+}
 @media (max-width: 550px){
     .certificate-container{
         display: flex;
