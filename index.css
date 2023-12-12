@@ -308,6 +308,7 @@ a{
     background-image: url(fondo-mariposa.jpg);
     background-size: cover;
     gap: 20px;
+    align-content: center;
 }
 .about-container {
     align-items: center;
