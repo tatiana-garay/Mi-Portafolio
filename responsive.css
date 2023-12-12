@@ -439,27 +439,6 @@
         margin-bottom: 40px
     }
 }
-@media (max-width: 550px){
-    .certificate-container{
-        display: flex;
-        flex-direction: column;
-        font-size: 23px;
-    }
-    .certificate-container h2{
-        font-size: 20px;
-    }
-    .cert-img{
-        width: 310px;
-    }
-    .certificate-images{
-        display: flex;
-        flex-direction: column;
-    }
-    .two-img{
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 /*Responsive footer*/
 @media (max-width: 550px ) {
