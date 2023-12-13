@@ -574,7 +574,7 @@ a{
 /*INICIO DE PROYECTOS*/
 .box-body {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     height: 110vh;
     
